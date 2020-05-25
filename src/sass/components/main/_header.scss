@@ -1,0 +1,8 @@
+@import "../abstract/variables";
+
+header {
+  grid-column: 1/ -1;
+  border: $border;
+  text-align: center;
+  font-size: 2rem;
+}

@@ -1,0 +1,49 @@
+@import "../abstract/variables";
+
+.main {
+  grid-column: 1 / -2;
+  border: $border;
+  display: grid;
+  grid-template-columns: repeat(2 1fr);
+
+  &__heading {
+    grid-column: 1/3;
+    color: red;
+    text-align: center;
+  }
+
+  &__left {
+    grid-column: 1/2;
+    border: $border;
+  }
+
+  &__right {
+    grid-column: 2/3;
+    border: $border;
+  }
+}
+
+.details {
+  margin: 0 1rem 0 1rem;
+  list-style-type: none;
+  //   border: $border2;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+
+  &__title {
+    grid-row: 1/2;
+    display: flex;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  &__gyr {
+    grid-row: 3/4;
+    display: flex;
+    justify-content: space-around;
+    // border: $border3;
+  }
+}
