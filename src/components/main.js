@@ -8,12 +8,12 @@ class Main extends Component {
             <div className='main'>
                 <h1 className="main__heading">Movies List</h1>
                 <div className="main__left">
-                    <ul>
+                    <ul className="list_items">
                         <Movies />
                     </ul>
                 </div>
                 <div className="main__right">
-                    <ul>
+                    <ul classNam="list_items">
                         <MoviesRight />
                     </ul>
                 </div>
