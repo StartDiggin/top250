@@ -21,37 +21,42 @@ header {
 h2 {
   font-size: 1.5rem; }
 
-#movieNumber {
-  margin-right: 5px;
-  font-size: 2rem; }
-
-#duration {
-  align-self: center;
-  margin-right: 3px;
-  font-size: 1.5rem; }
-
 #title {
   font-size: 2rem; }
 
 .details {
   margin: 0 1rem 0 1rem;
-  list-style-type: none;
-  display: grid;
-  grid-template-rows: repeat(2, 1fr); }
+  list-style-type: none; }
   .details__title {
     grid-row: 1/3;
     background-color: tan;
-    display: flex; }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); }
+    .details__title--img {
+      border: solid white 2px;
+      grid-column: 1/2;
+      grid-row: 1/3; }
     .details__title a {
       text-decoration: none;
       color: black;
       flex-grow: 3; }
       .details__title a :hover {
         color: #777; }
-  .details__gyr {
-    grid-row: 3/4;
-    display: flex;
-    justify-content: space-around;
+
+.heading {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  display: flex; }
+  .heading--num {
+    margin-right: 5px;
+    font-size: 2rem; }
+
+.dgyr {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  display: flex; }
+  .dgyr h4 {
     font-size: 1.5rem; }
 
 *,

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import MovieImg from './images';
+
 
 class Sidebar extends Component {
     render() {
         return(
             <div>
-                <MovieImg />
+           <h1>Sidebar</h1>
             </div>
         )
     }

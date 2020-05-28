@@ -25,17 +25,6 @@ h2 {
   font-size: 1.5rem;
 }
 
-#movieNumber {
-  margin-right: 5px;
-  font-size: 2rem;
-}
-
-#duration {
-  align-self: center;
-  margin-right: 3px;
-  font-size: 1.5rem;
-}
-
 #title {
   font-size: 2rem;
 }
@@ -43,13 +32,19 @@ h2 {
 .details {
   margin: 0 1rem 0 1rem;
   list-style-type: none;
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
 
   &__title {
     grid-row: 1/3;
     background-color: tan;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    &--img {
+      border: $border_img;
+      grid-column: 1/2;
+      grid-row: 1/3;
+    }
 
     a {
       text-decoration: none;
@@ -61,11 +56,25 @@ h2 {
       }
     }
   }
+}
 
-  &__gyr {
-    grid-row: 3/4;
-    display: flex;
-    justify-content: space-around;
+.heading {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  display: flex;
+
+  &--num {
+    margin-right: 5px;
+    font-size: 2rem;
+  }
+}
+
+.dgyr {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  display: flex;
+
+  h4 {
     font-size: 1.5rem;
   }
 }
