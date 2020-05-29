@@ -6,8 +6,11 @@ class Sidebar extends Component {
     render() {
         return(
             <div>
-           <h1>Sidebar</h1>
-           {MovieList.map((movie, index) => `${index + 1}. ${movie.title}`)}
+                <ul className="movieList">
+                    {MovieList.map((movie, index) => 
+                    <li key={index} className="movieList__items">{index + 1}. 
+                    <a href={movie['movie-url']}> {movie.title}</a></li>)}    
+                </ul>
             </div>
         )
     }
