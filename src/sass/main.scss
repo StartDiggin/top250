@@ -2,6 +2,7 @@
 @import "components/main/home";
 @import "components/main/sidebar";
 @import "components/main/footer";
+@import "./components/abstract/variables";
 
 *,
 *::before,
@@ -14,6 +15,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  background-color: $color3-darker;
 }
 
 .App {

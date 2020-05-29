@@ -1,9 +1,15 @@
+/* mid range - normal*/
+/* mid range - normal*/
+/* no opacity - normal*/
 header {
   grid-column: 1/ -1;
   border: solid black 1px;
   text-align: center;
   font-size: 2rem; }
 
+/* mid range - normal*/
+/* mid range - normal*/
+/* no opacity - normal*/
 .main {
   grid-column: 1 / -2;
   border: solid black 1px;
@@ -26,15 +32,15 @@ h2 {
 
 .details {
   margin: 0 1rem 0 1rem;
-  list-style-type: none; }
+  list-style-type: none;
+  margin-bottom: 1rem; }
   .details__title {
     grid-row: 1/3;
-    background-color: tan;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr); }
     .details__title--img {
-      border: solid white 2px;
+      border: solid #4095bf 1px;
       grid-column: 1/2;
       grid-row: 1/3; }
     .details__title a {
@@ -45,20 +51,28 @@ h2 {
         color: #777; }
 
 .heading {
+  background-color: #b3c4cc;
   grid-column: 2/4;
   grid-row: 1/2;
-  display: flex; }
+  display: flex;
+  border: solid #4095bf 1px;
+  border-radius: 1rem; }
   .heading--num {
-    margin-right: 5px;
+    margin-right: 1rem;
     font-size: 2rem; }
 
 .dgyr {
   grid-column: 2/4;
   grid-row: 2/3;
-  display: flex; }
+  background-color: #b3c4cc;
+  border-radius: 1rem;
+  border: solid #4095bf 1px; }
   .dgyr h4 {
     font-size: 1.5rem; }
 
+/* mid range - normal*/
+/* mid range - normal*/
+/* no opacity - normal*/
 *,
 *::before,
 *::after {
@@ -68,7 +82,8 @@ h2 {
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  background-color: #1271a1; }
 
 .App {
   display: grid;

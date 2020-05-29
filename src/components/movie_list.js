@@ -17,7 +17,7 @@ class Movies extends Component {
                         </div>
                         <div className="dgyr">
                             <h4>
-                                {movie.duration}
+                                duration: {movie.duration}
                             </h4>
                             <h4>genre: {movie.genre}</h4>
                             <h4>year: {movie.year}</h4>

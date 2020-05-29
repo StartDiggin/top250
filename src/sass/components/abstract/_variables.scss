@@ -1,3 +1,79 @@
+// Base colors
+$base-color1: 60;
+$base-color2: 120;
+$base-color3: 200;
+
+$saturation-level1: 20%;
+$saturation-level2: 50%; /* mid range - normal*/
+$saturation-level3: 80%;
+
+$lightness-level1: 75%;
+$lightness-level2: 50%; /* mid range - normal*/
+$lightness-level3: 35%;
+
+$opacity-level1: 100%; /* no opacity - normal*/
+$opacity-level2: 80%;
+$opacity-level3: 60%;
+
+// HSLA structure base/saturation/lightness/opacity
+// Base 1
+$color1-light: hsla(
+  $base-color1,
+  $saturation-level1,
+  $lightness-level1,
+  $opacity-level1
+);
+$color1-normal: hsla(
+  $base-color1,
+  $saturation-level2,
+  $lightness-level2,
+  $opacity-level1
+);
+$color1-darker: hsla(
+  $base-color1,
+  $saturation-level3,
+  $lightness-level3,
+  $opacity-level1
+);
+// Base 2
+$color2-light: hsla(
+  $base-color2,
+  $saturation-level1,
+  $lightness-level1,
+  $opacity-level1
+);
+$color2-normal: hsla(
+  $base-color2,
+  $saturation-level2,
+  $lightness-level2,
+  $opacity-level1
+);
+$color2-darker: hsla(
+  $base-color2,
+  $saturation-level3,
+  $lightness-level3,
+  $opacity-level1
+);
+//Base 3
+$color3-light: hsla(
+  $base-color3,
+  $saturation-level1,
+  $lightness-level1,
+  $opacity-level1
+);
+$color3-normal: hsla(
+  $base-color3,
+  $saturation-level2,
+  $lightness-level2,
+  $opacity-level1
+);
+$color3-darker: hsla(
+  $base-color3,
+  $saturation-level3,
+  $lightness-level3,
+  $opacity-level1
+);
+
 $border: solid black 1px;
 $border2: solid red 1px;
-$border_img: solid white 2px;
+$border_img: solid $color3-normal 1px;

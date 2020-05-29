@@ -32,10 +32,10 @@ h2 {
 .details {
   margin: 0 1rem 0 1rem;
   list-style-type: none;
+  margin-bottom: 1rem;
 
   &__title {
     grid-row: 1/3;
-    background-color: tan;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -59,12 +59,15 @@ h2 {
 }
 
 .heading {
+  background-color: $color3-light;
   grid-column: 2/4;
   grid-row: 1/2;
   display: flex;
+  border: $border_img;
+  border-radius: 1rem;
 
   &--num {
-    margin-right: 5px;
+    margin-right: 1rem;
     font-size: 2rem;
   }
 }
@@ -72,7 +75,9 @@ h2 {
 .dgyr {
   grid-column: 2/4;
   grid-row: 2/3;
-  display: flex;
+  background-color: $color3-light;
+  border-radius: 1rem;
+  border: $border_img;
 
   h4 {
     font-size: 1.5rem;

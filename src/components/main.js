@@ -13,7 +13,7 @@ class Main extends Component {
                     </ul>
                 </div>
                 <div className="main__right">
-                    <ul classNam="list_items">
+                    <ul className="list_items">
                         <MoviesRight />
                     </ul>
                 </div>
